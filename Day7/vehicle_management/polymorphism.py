@@ -1,20 +1,16 @@
 class Overloadingdemo:
     def show_details(self,*args):
-        if len(args)==1:
-            print(f"Car brand: {args[0]}")
-        elif len(args)==2:
-            print(f"Card Brand: {args[0]}, Model: {args[1]}")
+        if len(args) ==1:
+            print(f"Car Brand: {args[0]}")
+        elif len(args) ==2:
+            print(f"Car Brand: {args[0]},Model: {args[1]}")
         elif len(args)==3:
-            print(f"Car Brand: {args[0]}, Model:{args[1]}, year:{args[2]}")
+            print(f"Car Brand:{args[0]},Model: {args[1]}, Year: {args[2]}")
         else:
-            print(f"Invalid no of arguments. provide 3 arguments")
+            print("Invalid no of arguments.Please provide 1to 3 arguments")
 
-def overloading_demo():
+def Overloading_demo():
     demo=Overloadingdemo()
-    demo.show_details("Toyota")
-    demo.show_details("Honda","Civic")
-    demo.show_details("Telsa","2000","12345678")
-    demo.show_details("bmw","789","1234")
-
-
-        
+    demo.show_details("Toyoto")
+    demo.show_details("Honda")
+    demo.show_details("testle","2000",123456789)
