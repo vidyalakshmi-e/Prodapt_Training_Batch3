@@ -23,9 +23,7 @@ def main():
 
         # This may raise OwnerAlreadyExistsError
         car1.set_owner("madhunkhoidwi")
-
         print(car2.get_owner())
-
         Overloading_demo()
 
         vehicles = [car1, ev1, car2]
